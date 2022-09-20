@@ -3,6 +3,7 @@
   <head>
     <title>Formula 1 | Autos</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/png" href="./img/logo.svg"/>
   </head>
 
   <body>
