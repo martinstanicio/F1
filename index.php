@@ -10,7 +10,6 @@
     <nav>
       <img src="./img/logo.svg" alt="logo" />
 
-      <button>A</button>
       <ul class="links">
         <li><a href="./index.php">Inicio</a></li>
         <li><a href="./2022.php">2022</a></li>
