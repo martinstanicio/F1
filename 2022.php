@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Formula 1 | 2022</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="icon" type="image/png" href="./img/logo.svg"/>
   </head>
 

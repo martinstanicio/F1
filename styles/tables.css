@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--accent);
+}
+
+th {
+  font-weight: bold;
+  text-align: left;
+  background-color: var(--accent);
+  color: white;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(0, 0%, 95%);
+}

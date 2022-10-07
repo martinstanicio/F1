@@ -1,0 +1,80 @@
+.pilotos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.pilotos__piloto {
+  aspect-ratio: 4/3;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  transition: all 150ms ease-out;
+  border-bottom: 5px solid var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.pilotos__piloto:hover,
+.pilotos__piloto:focus {
+  transform: scale(1.1);
+}
+
+.pilotos__piloto .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: black;
+
+  transition: all 150ms ease-out;
+}
+
+.pilotos__piloto:hover .text,
+.pilotos__piloto:focus .text {
+  opacity: 0;
+}
+
+.pilotos__piloto .text p {
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+}
+
+.pilotos__piloto .text * {
+  padding: 1rem;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.schumacher {
+  background-image: url("./img/schumacher.png");
+}
+
+.hamilton {
+  background-image: url("./img/hamilton.jpg");
+}
+
+.fangio {
+  background-image: url("https://via.placeholder.com/400x300");
+}
+
+.lauda {
+  background-image: url("https://via.placeholder.com/400x300");
+}
+
+.senna {
+  background-image: url("https://via.placeholder.com/400x300");
+}
+
+.vettel {
+  background-image: url("https://via.placeholder.com/400x300");
+}
