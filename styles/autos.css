@@ -1,0 +1,28 @@
+.autos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.autos__auto {
+  display: flex;
+  width: 100%;
+  box-shadow: var(--shadow);
+  background-color: black;
+  color: white;
+}
+
+.autos__auto img {
+  aspect-ratio: 4/3;
+  width: 40%;
+  border-right: 5px solid var(--accent);
+}
+
+.autos__auto .text {
+  padding: 1rem 2rem;
+  line-height: 1.5;
+}
+
+.autos__auto strong {
+  color: var(--accent);
+}
