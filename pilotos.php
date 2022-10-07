@@ -32,6 +32,7 @@
         <a
           class="pilotos__piloto schumacher"
           href="https://es.wikipedia.org/wiki/Michael_Schumacher"
+          target="blank"
         >
           <div class="text">
             <h2>Michael Schumacher</h2>
@@ -41,6 +42,7 @@
         <a
           class="pilotos__piloto hamilton"
           href="https://es.wikipedia.org/wiki/Lewis_Hamilton"
+          target="blank"
         >
           <div class="text">
             <h2>Lewis Hamilton</h2>
@@ -50,6 +52,7 @@
         <a
           class="pilotos__piloto fangio"
           href="https://es.wikipedia.org/wiki/Juan_Manuel_Fangio"
+          target="blank"
         >
           <div class="text">
             <h2>Juan Fangio</h2>
@@ -59,6 +62,7 @@
         <a
           class="pilotos__piloto vettel"
           href="https://es.wikipedia.org/wiki/Sebastian_Vettel"
+          target="blank"
         >
           <div class="text">
             <h2>Sebastian Vettel</h2>
@@ -68,6 +72,7 @@
         <a
           class="pilotos__piloto senna"
           href="https://es.wikipedia.org/wiki/Ayrton_Senna"
+          target="blank"
         >
           <div class="text">
             <h2>Ayrton Senna</h2>
@@ -77,6 +82,7 @@
         <a
           class="pilotos__piloto lauda"
           href="https://es.wikipedia.org/wiki/Niki_Lauda"
+          target="blank"
         >
           <div class="text">
             <h2>Niki Lauda</h2>
