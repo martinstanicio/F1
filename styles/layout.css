@@ -15,6 +15,7 @@ body {
 .container {
   max-width: 100ch;
   margin: 3rem auto;
+  padding: 1rem;
 }
 
 nav,
