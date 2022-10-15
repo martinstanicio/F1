@@ -1,3 +1,7 @@
+a {
+  color: var(--accent);
+}
+
 h1 {
   font-size: 3em;
 }
@@ -8,4 +12,9 @@ abbr {
 
 ul {
   list-style-type: square;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
 }
