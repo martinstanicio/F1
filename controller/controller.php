@@ -17,7 +17,7 @@ class McvController
         if ($links == "2022" || $links == "autos" || $links == "contacto" || $links == "inicio" || $links == "pilotos") {
             $module = "views/" . $links . ".php";
         } else {
-            $module = "views/inicio.php";
+            $module = "views/404.php";
         }
 
         include $module;

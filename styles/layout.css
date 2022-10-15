@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .container {
   max-width: 100ch;
   margin: 3rem auto;
