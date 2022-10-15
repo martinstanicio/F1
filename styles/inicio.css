@@ -1,0 +1,10 @@
+.tyres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem 0;
+}
+
+.tyres img {
+  max-width: 212px;
+}

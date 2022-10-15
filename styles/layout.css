@@ -18,6 +18,15 @@ body {
   padding: 1rem;
 }
 
+figcaption {
+  text-align: center;
+  font-weight: bold;
+}
+
+figure * {
+  padding: 0.5rem;
+}
+
 nav,
 footer {
   background-color: black;
