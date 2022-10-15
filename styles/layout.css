@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  margin: 0;
+.container {
+  max-width: 100ch;
+  margin: 3rem auto;
 }
 
 nav,
