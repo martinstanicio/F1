@@ -8,18 +8,12 @@ class McvController
 
     public function pageLinks()
     {
-        if (isset($_GET["action"])) {
-            $links = $_GET["action"];
-        } else {
-            $links = "inicio";
-        }
+        $pages = ["2022", "autos", "contacto", "inicio", "pilotos",];
 
-        if ($links == "2022" || $links == "autos" || $links == "contacto" || $links == "inicio" || $links == "pilotos") {
-            $module = "views/" . $links . ".php";
-        } else {
-            $module = "views/404.php";
-        }
+        $link = (isset($_GET["action"])) ? ($_GET["action"]) : ("inicio");
 
-        include $module;
+        $filename = (in_array($link, $pages)) ? $link : "404";
+
+        include "views/" . $filename . ".php";
     }
 }
