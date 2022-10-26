@@ -14,8 +14,8 @@
 
     <main>
         <?php
-        $main = new McvController();
-        $main->pageLinks();
+        $controller = new Controller();
+        $controller->pageLinks();
         ?>
     </main>
 

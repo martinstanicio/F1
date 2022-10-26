@@ -1,5 +1,5 @@
 <?php
-class McvController
+class Controller
 {
     public $conn;
 

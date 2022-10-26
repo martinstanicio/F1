@@ -9,9 +9,9 @@ abstract class Model
     {
         $this->table = $table;
 
-        $mcv = new McvController();
-        $mcv->openDb();
-        $this->conn = $mcv->conn;
+        $controller = new Controller();
+        $controller->openDb();
+        $this->conn = $controller->conn;
     }
 
     public function getAll(): array
