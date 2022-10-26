@@ -1,6 +1,23 @@
 <?php
 class McvController
 {
+    public $conn;
+
+    public function openDb()
+    {
+        $this->conn = mysqli_connect(
+            DB::HOST,
+            DB::NAME,
+            DB::USER,
+            DB::PASS,
+        );
+    }
+
+    public function closeDb()
+    {
+        mysqli_close($this->conn);
+    }
+
     public function template()
     {
         include "views/template.php";
