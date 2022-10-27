@@ -1,5 +1,7 @@
 <nav>
-    <img src="./img/logo.svg" alt="logo" />
+    <a href="index.php">
+        <img src="./img/logo.svg" alt="logo" />
+    </a>
 
     <ul class="links">
         <li><a href="index.php">Inicio</a></li>
