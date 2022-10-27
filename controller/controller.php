@@ -1,4 +1,6 @@
 <?php
+require "config/db.php";
+
 class Controller
 {
     public $conn;

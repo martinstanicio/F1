@@ -1,6 +1,5 @@
 <?php
-require_once "config/db.php";
-require_once "controller/controller.php";
+require "controller/controller.php";
 
 $controller = new Controller();
 $controller->openDb();
