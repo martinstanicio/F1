@@ -7,9 +7,9 @@ class Controller
     {
         $this->conn = mysqli_connect(
             DB::HOST,
-            DB::NAME,
             DB::USER,
             DB::PASS,
+            DB::NAME,
         );
     }
 

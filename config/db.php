@@ -2,7 +2,7 @@
 class DB
 {
     const HOST = "localhost";
-    const NAME = "john";
-    const USER = "mysqltest";
-    const PASS = "f1";
+    const USER = "john";
+    const PASS = "mysqltest";
+    const NAME = "f1";
 }
