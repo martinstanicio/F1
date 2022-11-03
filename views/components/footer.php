@@ -1,5 +1,5 @@
 <footer>
-    <p>Hecho por MS & AR @ 2022</p>
+    <p>Martín Stanicio, Alejo Rivera. Colegio Del Norte. 2022.</p>
     <ul>
         <li><a href="https://www.facebook.com/Formula1">Facebook</a></li>
         <li><a href="https://twitter.com/f1">Twitter</a></li>
