@@ -17,12 +17,12 @@
         $pilotos = $piloto->getAll();
 
         foreach ($pilotos as $piloto) {
-            $name = htmlspecialchars($piloto["name"]);
-            $surname = htmlspecialchars($piloto["surname"]);
-            $titles = htmlspecialchars($piloto["titles"]);
+            $nombre = htmlspecialchars($piloto["nombre"]);
+            $apellido = htmlspecialchars($piloto["apellido"]);
+            $titulos = htmlspecialchars($piloto["titulos"]);
             $link = htmlspecialchars($piloto["link"]);
 
-            $bg = "background-image: url(./img/" . strtolower($surname) . ".jpg);";
+            $bg = "background-image: url(./img/" . strtolower($apellido) . ".jpg);";
 
             include "views/components/piloto.php";
         }
