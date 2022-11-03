@@ -39,6 +39,7 @@
         compañía industrial italiana <a href="https://es.wikipedia.org/wiki/Pirelli" title="Pirelli"
             target="_blank">Pirelli</a> tomó el relevo, siendo el único proveedor hasta la actualidad.
     </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wsCriICZ-nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <article>
         <h3>Compuestos secos</h3>
         <div class="tyres">
