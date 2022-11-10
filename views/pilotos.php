@@ -8,7 +8,7 @@
 <section class="container">
     <div class="pilotos">
         <?php
-        require "model/Piloto.php";
+        require_once "model/Piloto.php";
 
         $controller = new Controller();
         $controller->openDb();

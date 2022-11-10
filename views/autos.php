@@ -7,7 +7,7 @@
 </header>
 <section class="container autos">
     <?php
-    require "model/Auto.php";
+    require_once "model/Auto.php";
 
     $controller = new Controller();
     $controller->openDb();

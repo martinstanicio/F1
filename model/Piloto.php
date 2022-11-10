@@ -1,5 +1,5 @@
 <?php
-require "model/Model.php";
+require_once "model/Model.php";
 
 class Piloto extends Model
 {
