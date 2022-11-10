@@ -14,6 +14,12 @@ ul {
   list-style-type: square;
 }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
 ::selection {
   background-color: var(--accent);
   color: white;
@@ -34,7 +40,6 @@ ul {
   align-items: center;
   margin: auto;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .icon {
