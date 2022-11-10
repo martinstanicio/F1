@@ -84,3 +84,9 @@ iframe {
   aspect-ratio: 16/9;
   align-self: center;
 }
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
