@@ -22,4 +22,10 @@ abstract class Model
 
         return $table;
     }
+
+    public function deleteOne($id)
+    {
+        $sql = "DELETE FROM `" . $this->table . "` WHERE `" . $this->table . "`.`id` = " . $id;
+        mysqli_query($this->conn, $sql);
+    }
 }
