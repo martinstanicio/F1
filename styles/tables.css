@@ -19,3 +19,10 @@ td {
 tr:nth-child(odd) {
   background-color: hsl(0, 0%, 95%);
 }
+
+.mensaje {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 10ch;
+}

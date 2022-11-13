@@ -19,10 +19,10 @@
             <label for="genero">Género</label>
             <select name="genero" id="genero" required>
                 <option value="" disabled seleced>Eliga una opción</option>
-                <option value="m">Hombre</option>
-                <option value="f">Mujer</option>
-                <option value="o">No binario</option>
-                <option value="p">Prefiero no decirlo</option>
+                <option value="masculino">Hombre</option>
+                <option value="femenino">Mujer</option>
+                <option value="no binario">No binario</option>
+                <option value="x">Prefiero no decirlo</option>
             </select>
         </div>
         <div class="field">

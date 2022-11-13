@@ -15,7 +15,7 @@ $table = "CREATE TABLE IF NOT EXISTS `f1`.`formularios` (
     `nombre` VARCHAR(255) NOT NULL,
     `email` VARCHAR(255) NOT NULL,
     `telefono` VARCHAR(255) NOT NULL,
-    `genero` ENUM('m','f','o','p') NOT NULL,
+    `genero` ENUM('masculino','femenino','no binario','x') NOT NULL,
     `mensaje` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;";
@@ -26,9 +26,9 @@ $insert = "INSERT INTO `formularios` (
     `genero`,
     `mensaje`
 ) VALUES
-    ('Juan', 'juan@example.com', '549011123456', 'm', 'abc'),
-    ('Juana', 'juana@example.com', '549011789012', 'f', 'def'),
-    ('Carlos', 'carlos@example.com', '549011345678', 'm', 'ghi')";
+    ('Juan', 'juan@example.com', '549011123456', 'masculino', 'abc'),
+    ('Juana', 'juana@example.com', '549011789012', 'femenino', 'def'),
+    ('Carlos', 'carlos@example.com', '549011345678', 'x', 'ghi')";
 
 try {
     mysqli_query($conn, $table);
