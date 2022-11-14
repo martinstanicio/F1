@@ -1,7 +1,13 @@
 table {
+  display: block;
   width: 100%;
   border-collapse: collapse;
   border: 2px solid var(--accent);
+  overflow-x: auto;
+}
+
+tr:nth-child(odd) {
+  background-color: hsl(0, 0%, 95%);
 }
 
 th {
@@ -9,15 +15,18 @@ th {
   text-align: left;
   background-color: var(--accent);
   color: white;
+  width: 100%;
 }
 
 th,
 td {
+  vertical-align: top;
   padding: 1rem;
 }
 
-tr:nth-child(odd) {
-  background-color: hsl(0, 0%, 95%);
+table ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 .mensaje {
