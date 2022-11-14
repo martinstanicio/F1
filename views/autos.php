@@ -16,10 +16,22 @@
     $autos = $auto->getAll();
 
     foreach ($autos as $auto) {
-        $nombre = $auto["nombre"];
-        $descripcion = $auto["descripcion"];
-        $items = $auto["items"];
-        $img = $auto["img"];
+        $id = htmlspecialchars($auto["id"]);
+        $marca = htmlspecialchars($auto["marca"]);
+        $nombre = htmlspecialchars($auto["nombre"]);
+        $temporada = htmlspecialchars($auto["temporada"]);
+        $pilotos = htmlspecialchars($auto["pilotos"]);
+        $motor = htmlspecialchars($auto["motor"]);
+        $cilindrada = htmlspecialchars($auto["cilindrada"]);
+        $induccion = htmlspecialchars($auto["induccion"]);
+        $hp = htmlspecialchars($auto["hp"]);
+        $rpm = htmlspecialchars($auto["rpm"]);
+        $caja = htmlspecialchars($auto["caja"]);
+        $velocidades = htmlspecialchars($auto["velocidades"]);
+        $neumaticos = htmlspecialchars($auto["neumaticos"]);
+        $victorias = htmlspecialchars($auto["victorias"]);
+        $carreras = htmlspecialchars($auto["carreras"]);
+        $img = htmlspecialchars($auto["img"]);
 
         include "views/components/auto.php";
     }

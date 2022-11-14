@@ -12,21 +12,43 @@ $conn = mysqli_connect(
 
 $table = "CREATE TABLE IF NOT EXISTS `f1`.`autos` (
     `id` INT NOT NULL AUTO_INCREMENT,
+    `marca` VARCHAR(255) NOT NULL,
     `nombre` VARCHAR(255) NOT NULL,
-    `descripcion` VARCHAR(255) NOT NULL,
-    `items` VARCHAR(255) NOT NULL,
+    `temporada` INT NOT NULL,
+    `pilotos` VARCHAR(255) NOT NULL,
+    `motor` VARCHAR(255) NOT NULL,
+    `cilindrada` DECIMAL(3,1) NOT NULL,
+    `induccion` VARCHAR(255) NOT NULL,
+    `hp` INT NOT NULL,
+    `rpm` INT NOT NULL,
+    `caja` VARCHAR(255) NOT NULL,
+    `velocidades` INT NOT NULL,
+    `neumaticos` VARCHAR(255) NOT NULL,
+    `victorias` VARCHAR(255) NOT NULL,
+    `carreras` VARCHAR(255) NOT NULL,
     `img` VARCHAR(255) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB;";
 $insert = "INSERT INTO `autos` (
+    `marca`,
     `nombre`,
-    `descripcion`,
-    `items`,
+    `temporada`,
+    `pilotos`,
+    `motor`,
+    `cilindrada`,
+    `induccion`,
+    `hp`,
+    `rpm`,
+    `caja`,
+    `velocidades`,
+    `neumaticos`,
+    `victorias`,
+    `carreras`,
     `img`
 ) VALUES
-    ('Mclaren <strong>MP4/4</strong>', 'Diseñado para la temporada de 1988. Fue conducido por <strong>Ayrton Senna</strong> y <strong>Alain Prost</strong>.', '1.5L V6 <strong>Turbo</strong>,<strong>700 HP</strong> @ 12.500 rpm,Manual de <strong>6</strong> velocidades,Neumáticos <strong>Goodyear</strong>,<strong>15</strong> victorias en 16 carreras', 'mp4-4'),
-    ('Ferrari <strong>F2004</strong>', 'Diseñado para la temporada de 2004. Fue conducido por <strong>Michael Schumacher</strong> y <strong>Rubens Barrichello</strong>.', '3.0L V10 <strong>NA</strong>,<strong>900HP</strong> @ 19.000 rpm,Secuencial semiautomática de <strong>7</strong> velocidades,Neumáticos <strong>Bridgestone</strong>,<strong>15</strong> victorias en 18 carreras', 'f2004'),
-    ('Renault <strong>R25</strong>',   'Diseñado para la temporada de 2005. Fue conducido por <strong>Fernando Alonso</strong> y <strong>Giancarlo Fisichella</strong>.', '3.0L V10 <strong>NA</strong>,<strong>900HP</strong> @ 19.000 rpm,Secuencial semiautomática de <strong>6</strong> velocidades,Neumáticos <strong>Michelín</strong>,<strong>8</strong> victorias en 19 carreras', 'r25');";
+    ('Mclaren', 'MP4/4', 1988, 'Ayrton Senna,Alain Prost', 'V6', 1.5, 'Turbo', 700, 12500, 'Manual', 6, 'Goodyear', 15, 16, 'mp4-4'),
+    ('Ferrari', 'F2004', 2004, 'Michael Schumacher,Rubens Barrichello', 'V10', 3, 'NA', 900, 19000, 'Secuencial semiautomática', 7, 'Bridgestone', 15, 18, 'f2004'),
+    ('Renault', 'R25',  2005, 'Fernando Alonso,Giancarlo Fisichella', 'V10', 3, 'NA', 900, 19000, 'Secuencial semiautomática', 6, 'Michelín', 8, 19, 'r25');";
 
 try {
     mysqli_query($conn, $table);
