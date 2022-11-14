@@ -17,6 +17,7 @@ ul {
 button,
 input[type="submit"],
 input[type="reset"] {
+  padding: 0.75em 1em;
   cursor: pointer;
 }
 

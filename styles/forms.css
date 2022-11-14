@@ -36,7 +36,6 @@ input[type="reset"] {
   border: none;
   background-color: var(--accent);
   color: white;
-  padding: 1rem;
   font-weight: bold;
   font-size: 1em;
 }
