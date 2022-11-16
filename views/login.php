@@ -5,7 +5,7 @@
     <form method="POST">
         <div class="field">
             <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" id="usuario" required />
+            <input type="text" name="usuario" id="usuario" required autofocus />
         </div>
         <div class="field">
             <label for="contrasenia">Contraseña</label>

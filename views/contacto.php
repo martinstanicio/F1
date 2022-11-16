@@ -5,7 +5,7 @@
     <form action="index.php?action=contacto" method="POST">
         <div class="field">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required placeholder="Juan" />
+            <input type="text" name="nombre" id="nombre" required autofocus placeholder="Juan" />
         </div>
         <div class="field">
             <label for="email">Email</label>
