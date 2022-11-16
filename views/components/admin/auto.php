@@ -5,7 +5,7 @@
     <td>
         <ul>
             <?php foreach (explode(",", $pilotos) as $piloto) { ?>
-                <li><?php echo $piloto; ?></li>
+                <li><?php echo trim($piloto); ?></li>
             <?php } ?>
         </ul>
     </td>

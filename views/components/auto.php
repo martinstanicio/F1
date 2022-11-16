@@ -7,7 +7,7 @@
             echo "Diseñado para la temporada de " .  $temporada . ". ";
             echo "Fue conducido por";
             foreach (explode(",", $pilotos) as $piloto) {
-                echo ", <strong>" . $piloto . "</strong>";
+                echo ", <strong>" . trim($piloto) . "</strong>";
             } ?>.
         </p>
         <ul>
