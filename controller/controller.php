@@ -1,12 +1,12 @@
 <?php
-require_once "config/db.php";
-
 class Controller
 {
     public $conn;
 
     public function openDb()
     {
+        require_once "config/db.php";
+
         $this->conn = mysqli_connect(
             DB::HOST,
             DB::USER,
