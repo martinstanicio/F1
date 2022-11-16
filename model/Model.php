@@ -25,7 +25,7 @@ abstract class Model
 
     public function deleteOne($id)
     {
-        $sql = "DELETE FROM `" . $this->table . "` WHERE `" . $this->table . "`.`id` = " . $id;
+        $sql = "DELETE FROM `" . $this->table . "` WHERE `id` = " . $id;
         mysqli_query($this->conn, $sql);
     }
 }
