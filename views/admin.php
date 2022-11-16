@@ -41,7 +41,10 @@ $controller->openDb();
         </div>
     </article>
     <article>
-        <h2>Pilotos</h2>
+        <h2>
+            Pilotos
+            <a href="index.php?action=crearpiloto">(Crear)</a>
+        </h2>
         <div class="table-wrapper">
             <table>
                 <thead>
@@ -72,7 +75,10 @@ $controller->openDb();
         </div>
     </article>
     <article>
-        <h2>Autos</h2>
+        <h2>
+            Autos
+            <a href="index.php?action=crearauto">(Crear)</a>
+        </h2>
         <div class="table-wrapper">
             <table>
                 <thead>

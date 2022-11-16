@@ -13,6 +13,16 @@ form {
   gap: 0.5rem;
 }
 
+.field.split {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.field.split > div {
+  width: 100%;
+}
+
 input,
 textarea,
 select {
