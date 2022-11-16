@@ -18,7 +18,7 @@
         <div class="field">
             <label for="genero">Género</label>
             <select name="genero" id="genero" required>
-                <option value="" disabled seleced>Eliga una opción</option>
+                <option value="" disabled selected>Eliga una opción</option>
                 <option value="masculino">Hombre</option>
                 <option value="femenino">Mujer</option>
                 <option value="no binario">No binario</option>
