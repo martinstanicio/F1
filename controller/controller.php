@@ -35,4 +35,13 @@ class Controller
 
         include "views/" . $filename . ".php";
     }
+
+    public function checkAdmin()
+    {
+        require_once "config/admin.php";
+
+        if (!isset($_COOKIE["usuario"]) or $_COOKIE["usuario"] != Admin::USUARIO) {
+            header("location:index.php?action=login");
+        }
+    }
 }

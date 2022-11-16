@@ -1,11 +1,6 @@
 <?php
-require_once "config/admin.php";
-
-if (!isset($_COOKIE["usuario"]) or $_COOKIE["usuario"] != Admin::USUARIO) {
-    header("location:index.php?action=login");
-}
-
 $controller = new Controller();
+$controller->checkAdmin();
 $controller->openDb();
 ?>
 <header>
