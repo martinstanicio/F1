@@ -18,7 +18,7 @@ $table = "CREATE TABLE IF NOT EXISTS `f1`.`autos` (
     `pilotos` VARCHAR(255) NOT NULL,
     `motor` VARCHAR(255) NOT NULL,
     `cilindrada` DECIMAL(3,1) NOT NULL,
-    `induccion` VARCHAR(255) NOT NULL,
+    `induccion` ENUM('NA','Turbo','Supercargado') NOT NULL,
     `hp` INT NOT NULL,
     `rpm` INT NOT NULL,
     `caja` VARCHAR(255) NOT NULL,
