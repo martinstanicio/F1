@@ -19,14 +19,7 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    require_once "config/admin.php";
-
-    $usuario = $_POST["usuario"];
-    $contrasenia = $_POST["contrasenia"];
-
-    if ($usuario == Admin::USUARIO and $contrasenia == Admin::CONTRASENIA) {
-        setcookie("usuario", "admin");
-        header("location:index.php?action=admin");
-    }
+    $controller = new Controller;
+    $controller->login();
 }
 ?>

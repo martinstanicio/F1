@@ -58,4 +58,27 @@ class Controller
             header("location:index.php?action=login");
         }
     }
+
+    public function login()
+    {
+        require_once "config/admin.php";
+
+        $usuario = $_POST["usuario"];
+        $contrasenia = $_POST["contrasenia"];
+
+        if ($usuario == Admin::USUARIO and $contrasenia == Admin::CONTRASENIA) {
+            setcookie("usuario", "admin");
+            header("location:index.php?action=admin");
+        }
+    }
+
+    public function logout()
+    {
+        if (isset($_COOKIE["usuario"])) {
+            setcookie("usuario", null, time() - 3600);
+            header("location:index.php?action=login");
+        } else {
+            header("location:index.php?action=404");
+        }
+    }
 }
