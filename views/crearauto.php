@@ -35,9 +35,9 @@ $controller->checkAdmin();
             <label for="induccion">Inducción</label>
             <select name="induccion" id="induccion" required>
                 <option value disabled selected>Eliga una opción</option>
-                <option value="na">NA</option>
-                <option value="turbo">Turbo</option>
-                <option value="supercargado">Supercargado</option>
+                <option value="NA">NA</option>
+                <option value="Turbo">Turbo</option>
+                <option value="Supercargado">Supercargado</option>
             </select>
         </div>
         <div class="field split">
