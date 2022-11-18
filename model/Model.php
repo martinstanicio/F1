@@ -2,8 +2,8 @@
 
 abstract class Model
 {
-    private $controller;
-    private $table;
+    protected $controller;
+    protected $table;
 
     public function __construct($table)
     {
