@@ -7,7 +7,7 @@ $controller->openDb();
     <h1>Dashboard</h1>
 </header>
 <section class="container">
-    <article>
+    <article id="formularios">
         <h2>Formularios</h2>
         <div class="table-wrapper">
             <table>
@@ -40,7 +40,7 @@ $controller->openDb();
             </table>
         </div>
     </article>
-    <article>
+    <article id="pilotos">
         <h2>
             Pilotos
             <a href="index.php?action=crearpiloto">(Crear)</a>
@@ -74,7 +74,7 @@ $controller->openDb();
             </table>
         </div>
     </article>
-    <article>
+    <article id="autos">
         <h2>
             Autos
             <a href="index.php?action=crearauto">(Crear)</a>
