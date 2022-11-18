@@ -27,7 +27,21 @@ class Controller
 
     public function pageLinks()
     {
-        $pages = ["2022", "admin", "autos", "borrar", "confirmacion", "contacto", "crear", "crearauto", "crearpiloto", "inicio", "login", "logout", "pilotos"];
+        $pages = [
+            "2022",
+            "admin",
+            "autos",
+            "borrar",
+            "confirmacion",
+            "contacto",
+            "crear",
+            "crearauto",
+            "crearpiloto",
+            "inicio",
+            "login",
+            "logout",
+            "pilotos",
+        ];
 
         $link = (isset($_GET["action"])) ? ($_GET["action"]) : ("inicio");
 
