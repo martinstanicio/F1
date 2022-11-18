@@ -2,7 +2,7 @@
     <h1>Contactanos</h1>
 </header>
 <section class="container">
-    <form action="index.php?action=contacto" method="POST">
+    <form method="POST">
         <div class="field">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" required autofocus placeholder="Juan" />
