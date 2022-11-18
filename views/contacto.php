@@ -2,7 +2,9 @@
     <h1>Contactanos</h1>
 </header>
 <section class="container">
-    <form method="POST">
+    <form action="index.php?action=crear" method="POST">
+        <input type="hidden" name="item" value="Formulario">
+        <input type="hidden" name="redirect" value="index.php?action=confirmacion">
         <div class="field">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre" required autofocus placeholder="Juan" />
@@ -37,26 +39,3 @@
         </div>
     </form>
 </section>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $controller = new Controller();
-    $controller->openDb();
-
-    $sql = "INSERT INTO `formularios` (
-        `nombre`,
-        `email`,
-        `telefono`,
-        `genero`,
-        `mensaje`
-    ) VALUES (
-        '" . $_POST["nombre"] . "',
-        '" . $_POST["email"] . "',
-        '" . $_POST["telefono"] . "',
-        '" . $_POST["genero"] . "',
-        '" . $_POST["mensaje"] . "'
-    );";
-
-    mysqli_query($controller->conn, $sql);
-}
-?>

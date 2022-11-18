@@ -23,6 +23,8 @@ abstract class Model
         return $table;
     }
 
+    abstract public function insertOne(array $data);
+
     public function deleteOne($id)
     {
         $this->controller->openDb();

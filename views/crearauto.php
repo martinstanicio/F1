@@ -6,7 +6,9 @@ $controller->checkAdmin();
     <h1>Crear auto</h1>
 </header>
 <section class="container">
-    <form method="POST">
+    <form action="index.php?action=crear" method="POST">
+        <input type="hidden" name="item" value="Auto">
+        <input type="hidden" name="redirect" value="index.php?action=admin">
         <div class="field">
             <label for="marca">Marca</label>
             <input type="text" name="marca" id="marca" required autofocus />
@@ -87,45 +89,3 @@ $controller->checkAdmin();
         </div>
     </form>
 </section>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $controller->openDb();
-
-    $sql = "INSERT INTO `autos` (
-        `marca`,
-        `nombre`,
-        `temporada`,
-        `pilotos`,
-        `motor`,
-        `cilindrada`,
-        `induccion`,
-        `hp`,
-        `rpm`,
-        `caja`,
-        `velocidades`,
-        `neumaticos`,
-        `victorias`,
-        `carreras`,
-        `img`
-    ) VALUES (
-        '" . $_POST["marca"] . "',
-        '" . $_POST["nombre"] . "',
-        '" . $_POST["temporada"] . "',
-        '" . $_POST["pilotos"] . "',
-        '" . $_POST["motor"] . "',
-        '" . $_POST["cilindrada"] . "',
-        '" . $_POST["induccion"] . "',
-        '" . $_POST["hp"] . "',
-        '" . $_POST["rpm"] . "',
-        '" . $_POST["caja"] . "',
-        '" . $_POST["velocidades"] . "',
-        '" . $_POST["neumaticos"] . "',
-        '" . $_POST["victorias"] . "',
-        '" . $_POST["carreras"] . "',
-        '" . $_POST["img"] . "'
-    );";
-
-    mysqli_query($controller->conn, $sql);
-}
-?>
