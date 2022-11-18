@@ -2,30 +2,34 @@
 
 abstract class Model
 {
-    private $conn;
+    private $controller;
     private $table;
 
     public function __construct($table)
     {
+        $this->controller = new Controller();
         $this->table = $table;
-
-        $controller = new Controller();
-        $controller->openDb();
-        $this->conn = $controller->conn;
     }
 
     public function getAll(): array
     {
+        $this->controller->openDb();
+
         $sql = "SELECT * FROM " . $this->table;
-        $result = mysqli_query($this->conn, $sql);
+        $result = mysqli_query($this->controller->conn, $sql);
         $table = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+        $this->controller->closeDb();
         return $table;
     }
 
     public function deleteOne($id)
     {
+        $this->controller->openDb();
+
         $sql = "DELETE FROM `" . $this->table . "` WHERE `id` = " . $id;
-        mysqli_query($this->conn, $sql);
+        mysqli_query($this->controller->conn, $sql);
+
+        $this->controller->closeDb();
     }
 }
