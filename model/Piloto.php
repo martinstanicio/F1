@@ -10,8 +10,6 @@ class Piloto extends Model
 
     public function insertOne(array $data)
     {
-        $this->controller->openDb();
-
         $sql = "INSERT INTO `$this->table` (
             `nombre`,
             `apellido`,
@@ -25,7 +23,14 @@ class Piloto extends Model
         );";
 
         mysqli_query($this->controller->conn, $sql);
+    }
 
-        $this->controller->closeDb();
+    public function updateTitulos($id)
+    {
+        $titulos = $this->getOne($id)["titulos"];
+
+        $sql = "UPDATE `$this->table` SET `titulos`='" . $titulos + 1 . "' WHERE `id` = $id";
+
+        mysqli_query($this->controller->conn, $sql);
     }
 }

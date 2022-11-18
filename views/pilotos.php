@@ -9,10 +9,6 @@
     <div class="pilotos">
         <?php
         require_once "model/Piloto.php";
-
-        $controller = new Controller();
-        $controller->openDb();
-
         $piloto = new Piloto();
         $pilotos = $piloto->getAll();
 
@@ -26,8 +22,6 @@
 
             include "views/components/piloto.php";
         }
-
-        $controller->closeDb();
         ?>
     </div>
 </section>

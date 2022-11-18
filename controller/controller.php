@@ -40,6 +40,7 @@ class Controller
             "inicio",
             "login",
             "logout",
+            "modificar",
             "pilotos",
         ];
 

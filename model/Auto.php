@@ -10,8 +10,6 @@ class Auto extends Model
 
     public function insertOne(array $data)
     {
-        $this->controller->openDb();
-
         $sql = "INSERT INTO `$this->table` (
             `marca`,
             `nombre`,
@@ -47,7 +45,5 @@ class Auto extends Model
         );";
 
         mysqli_query($this->controller->conn, $sql);
-
-        $this->controller->closeDb();
     }
 }

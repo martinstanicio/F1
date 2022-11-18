@@ -9,9 +9,6 @@
     <?php
     require_once "model/Auto.php";
 
-    $controller = new Controller();
-    $controller->openDb();
-
     $auto = new Auto();
     $autos = $auto->getAll();
 
@@ -35,7 +32,5 @@
 
         include "views/components/auto.php";
     }
-
-    $controller->closeDb();
     ?>
 </section>
