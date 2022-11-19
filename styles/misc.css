@@ -43,8 +43,7 @@ input[type="reset"] {
   font-weight: bold;
 }
 
-.icon {
+svg {
   height: 1.25em;
   width: auto;
-  fill: currentColor;
 }
