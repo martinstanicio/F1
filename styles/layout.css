@@ -96,13 +96,6 @@ header img {
   object-fit: cover;
 }
 
-iframe {
-  width: 100%;
-  max-width: 560px;
-  aspect-ratio: 16/9;
-  align-self: center;
-}
-
 .botones {
   display: flex;
   flex-direction: column;

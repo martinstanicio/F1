@@ -21,7 +21,10 @@
         Bridgestone anunció su retirada de la Fórmula 1 al acabar el campeonato de 2010. A partir de entonces, la
         compañía industrial italiana <a href="https://es.wikipedia.org/wiki/Pirelli" title="Pirelli" target="_blank">Pirelli</a> tomó el relevo, siendo el único proveedor hasta la actualidad.
     </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wsCriICZ-nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <video controls poster="img/pitstop.jpg">
+        <source src="media/pitstop.mp4" type="video/mp4">
+        Su navegador no soporta la etiqueta de video.
+    </video>
     <article>
         <h3>Compuestos secos</h3>
         <div class="tyres">

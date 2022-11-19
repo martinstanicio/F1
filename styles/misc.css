@@ -21,6 +21,13 @@ input[type="reset"] {
   cursor: pointer;
 }
 
+video {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16/9;
+  align-self: center;
+}
+
 ::selection {
   background-color: var(--accent);
   color: white;
