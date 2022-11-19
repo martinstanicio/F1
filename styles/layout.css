@@ -36,42 +36,54 @@ figure * {
   padding: 0.5rem;
 }
 
-nav,
-footer {
+:is(nav, footer) {
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: 1rem;
   padding: 1em;
 }
 
-nav ul,
-footer ul {
+:is(nav, footer) ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: 1em;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav a,
-footer a {
+nav ul {
+  --display-links: none;
+  display: var(--display-links);
+}
+
+:is(nav, footer) a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:active {
+:is(nav, footer) a:active {
   color: var(--accent);
 }
 
-footer {
-  flex-wrap: wrap;
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: white;
+  line-height: 0;
 }
 
 header {
@@ -95,4 +107,20 @@ iframe {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  :is(nav, footer),
+  :is(nav, footer) ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
 }
