@@ -28,29 +28,12 @@ video {
   align-self: center;
 }
 
-::selection {
-  background-color: var(--accent);
-  color: white;
-}
-
-.calendario {
-  text-decoration: none;
-}
-
-.calendario__button {
-  padding: 1rem 1.5rem;
-  background-color: black;
-  color: white;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  margin: auto;
-  font-weight: bold;
-}
-
 svg {
   height: 1.25em;
   width: auto;
+}
+
+::selection {
+  background-color: var(--accent);
+  color: white;
 }
