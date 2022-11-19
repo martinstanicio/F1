@@ -1,5 +1,5 @@
 <header>
-    <img src="./img/hero.jpg" alt="imagen de encabezado" />
+    <img src="img/hero.jpg" alt="imagen de encabezado" />
 </header>
 <section class="container">
     <h2>Historia y origen</h2>
@@ -13,7 +13,7 @@
 </section>
 <section class="container">
     <h2>Neumaticos</h2>
-    <!-- <img src="./img/tyres.png" alt="Neumáticos"> -->
+    <!-- <img src="img/tyres.png" alt="Neumáticos"> -->
     <p>
         Debido a la decisión de la <a href="https://es.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_Internationale_de_l%27Automobile" title="Fédération Internationale de l'Automobile" target="_blank">FIA</a> de imponer un único fabricante de
         neumáticos en el Mundial a partir de 2008, Michelin anunció que dejaba la Fórmula 1 después del campeonato de
@@ -29,15 +29,15 @@
         <h3>Compuestos secos</h3>
         <div class="tyres">
             <figure>
-                <img src="./img/soft.png" alt="Neumáticos blandos">
+                <img src="img/soft.png" alt="Neumáticos blandos">
                 <figcaption>Blandos</figcaption>
             </figure>
             <figure>
-                <img src="./img/medium.png" alt="Neumáticos medios">
+                <img src="img/medium.png" alt="Neumáticos medios">
                 <figcaption>Medios</figcaption>
             </figure>
             <figure>
-                <img src="./img/hard.png" alt="Neumáticos duros">
+                <img src="img/hard.png" alt="Neumáticos duros">
                 <figcaption>Duros</figcaption>
             </figure>
         </div>
@@ -45,11 +45,11 @@
     <article>
         <h3>Compuestos de lluvia</h3>
         <div class="tyres">
-            <figure><img src="./img/intermediate.png" alt="Neumáticos intermedios">
+            <figure><img src="img/intermediate.png" alt="Neumáticos intermedios">
                 <figcaption>Intermedios</figcaption>
             </figure>
             <figure>
-                <img src="./img/wet.png" alt="Neumáticos mojados">
+                <img src="img/wet.png" alt="Neumáticos mojados">
                 <figcaption>Mojados</figcaption>
             </figure>
         </div>

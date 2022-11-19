@@ -1,7 +1,7 @@
 <nav>
     <div class="menu-container">
         <a href="index.php">
-            <img src="./img/logo.svg" alt="logo" />
+            <img src="img/logo.svg" alt="logo" />
         </a>
         <button class="menu" onclick="toggleLinks()">
             <?php

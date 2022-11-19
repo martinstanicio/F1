@@ -4,7 +4,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
     </p>
-    <a href="./media/calendario-2022.pdf" target="_blank" class="calendario">
+    <a href="media/calendario-2022.pdf" target="_blank" class="calendario">
         <button class="calendario__button">
             <span>Calendario</span>
             <?php

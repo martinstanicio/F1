@@ -20,7 +20,7 @@
     <td><?php echo $victorias; ?></td>
     <td><?php echo $carreras; ?></td>
     <td>
-        <a href="<?php echo "./img/" . $img . ".jpg"; ?>" title="<?php echo $nombre; ?>" about="_blank">
+        <a href="<?php echo "img/" . $img . ".jpg"; ?>" title="<?php echo $nombre; ?>" about="_blank">
             Imagen
         </a>
     </td>
