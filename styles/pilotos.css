@@ -38,7 +38,7 @@
 
 .pilotos__piloto:hover .text,
 .pilotos__piloto:focus .text {
-  opacity: 0;
+  opacity: 50%;
 }
 
 .pilotos__piloto .text p {
