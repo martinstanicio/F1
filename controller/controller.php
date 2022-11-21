@@ -28,10 +28,10 @@ class Controller
     public function pageLinks()
     {
         $pages = [
-            "2022",
             "admin",
             "autos",
             "borrar",
+            "campeonato",
             "confirmacion",
             "contacto",
             "crear",
