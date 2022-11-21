@@ -2,10 +2,10 @@
 $controller = new Controller();
 $controller->checkAdmin();
 ?>
-<header>
-    <h1>Crear piloto</h1>
-</header>
 <section class="container">
+    <header>
+        <h1>Crear piloto</h1>
+    </header>
     <form action="index.php?action=crear" method="POST">
         <input type="hidden" name="item" value="Piloto">
         <input type="hidden" name="redirect" value="index.php?action=admin">

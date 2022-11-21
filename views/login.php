@@ -1,7 +1,7 @@
-<header>
-    <h1>Login</h1>
-</header>
 <section class="container">
+    <header>
+        <h1>Login</h1>
+    </header>
     <form method="POST">
         <div class="field">
             <label for="usuario">Usuario</label>

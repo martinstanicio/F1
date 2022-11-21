@@ -1,10 +1,10 @@
-<header>
-    <h1>Pilotos importantes</h1>
-    <p>
-        Aquí podrás encontrar a los pilotos que tuvieron el mayor impacto en toda la historia de la Fórmula 1, desde sus comienzos hasta la actualidad.
-    </p>
-</header>
 <section class="container">
+    <header>
+        <h1>Pilotos importantes</h1>
+        <p>
+            Aquí podrás encontrar a los pilotos que tuvieron el mayor impacto en toda la historia de la Fórmula 1, desde sus comienzos hasta la actualidad.
+        </p>
+    </header>
     <div class="pilotos">
         <?php
         require_once "model/Piloto.php";

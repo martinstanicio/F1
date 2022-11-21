@@ -3,10 +3,10 @@ $controller = new Controller();
 $controller->checkAdmin();
 $controller->openDb();
 ?>
-<header>
-    <h1>Dashboard</h1>
-</header>
 <section class="container">
+    <header>
+        <h1>Dashboard</h1>
+    </header>
     <article id="formularios">
         <h2>Formularios</h2>
         <div class="table-wrapper">
