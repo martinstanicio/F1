@@ -1,5 +1,5 @@
 <article class="autos__auto">
-    <img src="<?php echo "img/" . $img . ".jpg"; ?>" alt="<?php echo $nombre; ?>">
+    <img src="<?php echo $img; ?>" alt="<?php echo $nombre; ?>">
     <div class="text">
         <h2><?php echo $marca; ?> <strong><?php echo $nombre; ?></strong></h2>
         <p>

@@ -17,8 +17,9 @@
             $apellido = htmlspecialchars($piloto["apellido"]);
             $titulos = htmlspecialchars($piloto["titulos"]);
             $link = htmlspecialchars($piloto["link"]);
+            $img = htmlspecialchars($piloto["img"]);
 
-            $bg = "background-image: url(./img/" . strtolower($apellido) . ".jpg);";
+            $bg = "background-image: url(" . $img . ");";
 
             include "views/components/piloto.php";
         }

@@ -14,12 +14,14 @@ class Piloto extends Model
             `nombre`,
             `apellido`,
             `titulos`,
-            `link`
+            `link`,
+            `img`
         ) VALUES (
             '" . $data["nombre"] . "',
             '" . $data["apellido"] . "',
             " . $data["titulos"] . ",
-            '" . $data["link"] . "'
+            '" . $data["link"] . "',
+            '" . $data["img"] . "'
         );";
 
         mysqli_query($this->controller->conn, $sql);

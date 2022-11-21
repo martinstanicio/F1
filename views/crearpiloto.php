@@ -26,6 +26,10 @@ $controller->checkAdmin();
             <input type="url" name="link" id="link" required />
         </div>
         <div class="field">
+            <label for="img">Imágen</label>
+            <input type="url" name="img" id="img" />
+        </div>
+        <div class="field">
             <input type="submit" value="Enviar" />
         </div>
         <div class="field">

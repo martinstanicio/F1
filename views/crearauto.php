@@ -79,7 +79,7 @@ $controller->checkAdmin();
         </div>
         <div class="field">
             <label for="img">Imágen</label>
-            <input type="text" name="img" id="img" required />
+            <input type="url" name="img" id="img" />
         </div>
         <div class="field">
             <input type="submit" value="Enviar" />

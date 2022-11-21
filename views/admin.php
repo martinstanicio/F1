@@ -53,6 +53,7 @@ $controller->openDb();
                         <th>Apellido</th>
                         <th>Títulos</th>
                         <th>Link</th>
+                        <th>Imagen</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -67,6 +68,8 @@ $controller->openDb();
                         $apellido = htmlspecialchars($piloto["apellido"]);
                         $titulos = htmlspecialchars($piloto["titulos"]);
                         $link = htmlspecialchars($piloto["link"]);
+                        $img = htmlspecialchars($piloto["img"]);
+
                         include "views/components/admin/piloto.php";
                     }
                     ?>
@@ -123,6 +126,7 @@ $controller->openDb();
                         $victorias = htmlspecialchars($auto["victorias"]);
                         $carreras = htmlspecialchars($auto["carreras"]);
                         $img = htmlspecialchars($auto["img"]);
+
                         include "views/components/admin/auto.php";
                     }
                     ?>
