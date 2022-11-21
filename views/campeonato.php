@@ -1,8 +1,7 @@
 <header>
     <h1>Campeonato <?php echo date("Y"); ?></h1>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Standings en tiempo real del campeonato de pilotos y constructores, para que siempre estés al tanto.
     </p>
     <a href="media/calendario-2022.pdf" target="_blank">Calendario 2022</a>
 </header>

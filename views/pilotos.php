@@ -1,8 +1,7 @@
 <header>
     <h1>Pilotos importantes</h1>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Aquí podrás encontrar a los pilotos que tuvieron el mayor impacto en toda la historia de la Fórmula 1, desde sus comienzos hasta la actualidad.
     </p>
 </header>
 <section class="container">

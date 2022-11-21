@@ -1,8 +1,7 @@
 <header>
     <h1>Autos icónicos</h1>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Estos son algunos de los autos propios de la Fórmula 1 más reconocidos en el mundo del automobilismo, ya sea por su increible éxito, por su apariencia, o por sus innovaciones tecnológicas.
     </p>
 </header>
 <section class="container autos">
