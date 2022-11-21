@@ -20,7 +20,7 @@ abstract class Model
 
     public function getAll(): array
     {
-        $sql = "SELECT * FROM " . $this->table;
+        $sql = "SELECT * FROM `$this->table`";
         $result = mysqli_query($this->controller->conn, $sql);
         $table = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -29,7 +29,7 @@ abstract class Model
 
     public function getOne($id)
     {
-        $sql = "SELECT * FROM $this->table WHERE `id` = $id";;
+        $sql = "SELECT * FROM `$this->table` WHERE `id` = $id";;
         $result = mysqli_query($this->controller->conn, $sql);
         $items = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
@@ -40,7 +40,7 @@ abstract class Model
 
     public function deleteOne($id)
     {
-        $sql = "DELETE FROM `" . $this->table . "` WHERE `id` = " . $id;
+        $sql = "DELETE FROM `$this->table` WHERE `id` = " . $id;
         mysqli_query($this->controller->conn, $sql);
     }
 }

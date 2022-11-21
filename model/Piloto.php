@@ -29,9 +29,9 @@ class Piloto extends Model
 
     public function updateTitulos($id)
     {
-        $titulos = $this->getOne($id)["titulos"];
+        $titulos = $this->getOne($id)["titulos"] + 1;
 
-        $sql = "UPDATE `$this->table` SET `titulos`='" . $titulos + 1 . "' WHERE `id` = $id";
+        $sql = "UPDATE `$this->table` SET `titulos`='$titulos' WHERE `id` = $id";
 
         mysqli_query($this->controller->conn, $sql);
     }
