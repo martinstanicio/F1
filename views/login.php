@@ -15,6 +15,9 @@
             <input type="submit" value="Iniciar sesión" />
         </div>
     </form>
+    <?php if (isset($_GET["error"])) { ?>
+        <p class="center">El nombre de usuario o la contraseña son incorrectos.</p>
+    <?php } ?>
 </section>
 
 <?php

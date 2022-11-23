@@ -70,6 +70,8 @@ class Controller
         if ($usuario == Admin::USUARIO and $contrasenia == Admin::CONTRASENIA) {
             setcookie("usuario", "admin");
             header("location:index.php?action=admin");
+        } else {
+            header("location:index.php?action=login&error");
         }
     }
 

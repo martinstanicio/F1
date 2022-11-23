@@ -37,3 +37,7 @@ svg {
   background-color: var(--accent);
   color: white;
 }
+
+.center {
+  text-align: center;
+}
